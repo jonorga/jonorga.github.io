@@ -1,0 +1,17 @@
+body {
+	font-family: "Inter", sans-serif;
+	background-color: #1E1E1E;
+	color: #FFFFFF;
+}
+
+#header {
+	display: flex;
+	justify-content: flex-end;
+	gap: 3vmin;
+}
+
+#header span {
+	font-style: italic;
+	font-weight: 200;
+	color: #A8A8A8;
+}
