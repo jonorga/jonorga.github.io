@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Jon Organ's Website</title>
+		<script src="./src/css-doodle.js"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -17,7 +18,34 @@
 		<div id="maincontent">
 			<h1>Hi! I'm Jon Organ.</h1>
 			<h3>I create custom websites, apps, and automation tools</h3>
-			<p>I'm looking for...</p>
+			<css-doodle>
+			  <style>
+			  	:doodle {
+			  		@grid: 40x20;
+			  		@size: 90vw 60vh;
+			  	}
+			    
+
+
+			    background: hsla(
+				  calc(176 + @i/3), 70%, 68%, 40%
+				);
+			    scale: 0;
+			    opacity: 0;
+			    animation: m 10s linear infinite;
+			    
+			    animation-delay: calc(
+			      -1s/@I * @i * @sin(@i)
+			    );
+
+			    @keyframes m {
+			      0%, 50%, 90% { scale: 1; opacity: 1 }
+			      25%, 75%, 100% { scale: 0; opacity: 0 }
+			    }
+			  </style>
+			 </css-doodle>
+			<p id="anim_text">I'm looking for...</p>
+			
 		</div>
 	</body>
 </html>

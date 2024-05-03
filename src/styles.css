@@ -40,3 +40,17 @@ p {
 	margin-left: 3rem;
 	margin-right: 3rem;
 }
+
+#anim_text {
+	font-size: 1.5rem;
+	margin-top: 30vmin;
+	margin-left: 1vmin;
+}
+
+css-doodle {
+	position: absolute;
+	top: 30%;
+}
+
+
+
