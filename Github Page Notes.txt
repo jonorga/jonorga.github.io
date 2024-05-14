@@ -1,0 +1,9 @@
+TODO:
+- Make "I'm looking for..." dynamic
+- Make landings for:
+	- Websites
+	- Apps
+	- Tools
+	- Contact Me
+- Polish off
+	- Other shooting stars animation?

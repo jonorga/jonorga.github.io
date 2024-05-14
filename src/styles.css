@@ -34,6 +34,24 @@ p {
 	font-style: italic;
 	font-weight: 200;
 	color: #A8A8A8;
+	cursor: pointer;
+}
+
+#header span::after {
+	content: "";
+	position: relative;
+	display: block;
+	height: 2px;
+	width: 0%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	text-align: center;
+	transition: width .3s ease-out;
+}
+
+#header span:hover::after {
+	width: 100%;
 }
 
 #maincontent {
