@@ -1,9 +1,11 @@
 TODO:
-- Make "I'm looking for..." dynamic
+- DONE Make "I'm looking for..." dynamic
 - Make landings for:
+	- Contact Me
+		- DONE Make basic contact sheet
+		- CSS prettier
 	- Websites
 	- Apps
 	- Tools
-	- Contact Me
 - Polish off
 	- Other shooting stars animation?
