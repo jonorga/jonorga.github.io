@@ -7,6 +7,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="../src/styles.css"/>
+		<link rel="stylesheet" href="./contactstyles.css"/>
 	</head>
 	<body>
 		<div id="header">
@@ -17,43 +18,43 @@
 			<span><a href="../contact">CONTACT</a></span>
 		</div>
 		<div id="maincontent">
-			<h1>Contact Me</h1>
-			<form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxVRb0xhvXfbG_5lIExyxkWYXHqlMMAwG5rVf2W-hW1-7DB6WcBD0RnH5PO22PP2zjGjg/exec">
-				<div class="form-elements">
-			      <fieldset class="pure-group">
-			        <label for="name">Name: </label>
-			        <input id="name" name="name" placeholder="What your Mom calls you" />
-			      </fieldset>
+			<div id="contactdiv">
+				<h1>Contact Me</h1>
+				<form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxVRb0xhvXfbG_5lIExyxkWYXHqlMMAwG5rVf2W-hW1-7DB6WcBD0RnH5PO22PP2zjGjg/exec">
+					<div class="form-elements">
+				      <fieldset class="pure-group">
+				        <label for="name">Name: </label>
+				        <input id="name" name="name" placeholder="Your name" />
+				      </fieldset>
+				      <div class="separation"></div>
+				      <fieldset class="pure-group">
+				        <label for="message">Message: </label>
+				        <textarea id="message" name="message" rows="10"
+				        placeholder="I'm looking to build..."></textarea>
+				      </fieldset>
+				      <div class="separation"></div>
+				      <fieldset class="pure-group">
+				        <label for="email">Email Address:</label>
+				        <input id="email" name="email" type="email" value=""
+				        required placeholder="your.name@email.com"/>
+				      </fieldset>
 
-			      <fieldset class="pure-group">
-			        <label for="message">Message: </label>
-			        <textarea id="message" name="message" rows="10"
-			        placeholder="Tell us what's on your mind..."></textarea>
-			      </fieldset>
-
-			      <fieldset class="pure-group">
-			        <label for="email"><em>Your</em> Email Address:</label>
-			        <input id="email" name="email" type="email" value=""
-			        required placeholder="your.name@email.com"/>
-			      </fieldset>
-
-			      <fieldset class="pure-group">
-			        <label for="color">Favourite Color: </label>
-			        <input id="color" name="color" placeholder="green" />
-			      </fieldset>
-
-			      <fieldset class="pure-group honeypot-field">
-			        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
-			        <input id="honeypot" type="text" name="honeypot" value="" />
-			      </fieldset>
-
-			      <button class="button-success pure-button button-xlarge">
-			        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-			    </div>
-			    <div class="thankyou_message" style="display:none">
-					<p>Your message has been sent, I will be in contact with you as soon as I can.</p>
-				</div>
-			</form>
+				      <fieldset class="honeypot-field">
+				        <label for="honeypot">Honeypot</label>
+				        <input id="honeypot" type="text" name="honeypot" value="" />
+				      </fieldset>
+				      <div class="btn-success-div">
+				      	<button class="button-success pure-button button-xlarge">Send</button>
+				      </div>
+				    </div>
+				    <div class="sending_msg" style="display:none">
+				    	<p>Sending...</p>
+				    </div>
+				    <div class="thankyou_message" style="display:none">
+						<p>Your message has been sent, I will be in contact with you as soon as I can.</p>
+					</div>
+				</form>
+			</div>
 		</div>
 		
 		<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>

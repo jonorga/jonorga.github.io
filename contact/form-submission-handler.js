@@ -50,6 +50,10 @@
     return {data: formData, honeypot: honeypot};
   }
 
+  function awaitingSend() {
+
+  }
+
   function handleFormSubmit(event) {  // handles form submit without any jquery
     event.preventDefault();           // we are submitting via xhr below
     var form = event.target;
@@ -71,8 +75,10 @@
         if (xhr.readyState === 4 && xhr.status === 200) {
           form.reset();
           var formElements = form.querySelector(".form-elements")
+          var sendingMessage = form.querySelector(".sending_msg");
           if (formElements) {
             formElements.style.display = "none"; // hide form
+            sendingMessage.style.display = "none";
           }
           var thankYouMessage = form.querySelector(".thankyou_message");
           if (thankYouMessage) {
@@ -84,7 +90,12 @@
     var encoded = Object.keys(data).map(function(k) {
         return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
     }).join('&');
+    var sendingMessage = form.querySelector(".sending_msg");
+    if (sendingMessage) {
+      sendingMessage.style.display = "block";
+    }
     xhr.send(encoded);
+    
   }
   
   function loaded() {
