@@ -1,0 +1,30 @@
+.content_section {
+	border: 1px white solid;
+	border-radius: 5px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn_standard {
+	width: 5%;
+	text-align: center;
+	font-size: 2em;
+	border: 1px white solid;
+	border-radius: 5px;
+	padding-bottom: .5%;
+	max-width: 40px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.btn_standard:hover {
+	background-color: midnightblue;
+}
+
+#frontend_content {
+	width: 90%;
+	border: 1px white ridge;
+	padding: 5px;
+}
