@@ -10,9 +10,18 @@ TODO:
 			- DONE Remove decoration from inputs, fix hover or focus decorations
 			- DONE Center and stylize send
 			- DONE Show that the message is sending
+- DONE Make "I'm looking for..." have actual options (20 or 30)
+- Make landings for:
 	- Websites
+		- Front-end: Custom built websites from scratch (like this one!)
+			- Front-end function: calendar, validation
+			- Front-end style: animation, font, layout
+		- Back-end: Databases, automated emails
+			- Fast scalable databases
+			- Emails/cron jobs
+		- Full-stack: API integration or anything inbetween
+			- Wix/wordpress
 	- Apps
 	- Tools
-- Make "I'm looking for..." have actual options (20 or 30)
 - Polish off
 	- Other shooting stars animation?
