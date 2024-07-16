@@ -16,11 +16,32 @@
 }
 
 #contactdiv {
+	position: absolute;
 	border: 3px grey solid;
 	padding: 10px;
-	margin-top: 10%;
+	left: 10%;
+	right: 10%;
+	top: 15%;
+	bottom: 15%;
 	border-radius: 15px;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 4;
 }
+
+#c_blursect {
+	background-image: url('../images/back2.png');
+	position: absolute;
+	min-width: 60vw;
+	min-height: 40vh;
+	left: 10%;
+	right: 10%;
+	top: 15%;
+	bottom: 15%;
+	z-index: 2;
+	border-radius: 15px;
+	filter: blur(4px);
+}
+
 
 .button-success {
 	background-color: royalblue;
