@@ -1,0 +1,20 @@
+#integ-cal-sect {
+	background: linear-gradient(#e66465, #9198e5);
+	padding: 2rem;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	color: black;
+}
+
+.inner-sect {
+	display: flex;
+}
+
+.body-text {
+	font-size: 1.2rem;
+}
+
+.text-link {
+	color: blue;
+	text-decoration-line: underline;
+}
